@@ -113,10 +113,10 @@ function App() {
       
       <div className="absolute bottom-10 right-10 flex flex-col items-center z-10">
         <div className="flex flex-row">
-          <a href="https://x.com/" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://x.com/giganasol" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={Xlogo} alt="Xlogo" className="w-14 h-14 rounded-md" />
           </a>
-          <a href="https://t.me/" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://t.me/GIGANASOL" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={TG} alt="Tg logo" className="w-14 h-14" />
           </a>
         </div>
