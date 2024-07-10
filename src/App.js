@@ -90,7 +90,7 @@ function App() {
 
   return (
     <div
-      className="h-screen w-screen flex justify-center items-center bg-zinc-600 overflow-clip relative"
+      className="h-screen w-screen flex justify-center items-center bg-zinc-950 overflow-clip relative"
     >
       
       <div className='absolute top-5 left-5 right-5 z-20'>
@@ -101,7 +101,7 @@ function App() {
         </AnimatedList>
       </div>
 
-      <div className='absolute top-0 left-0 right-0 border-y-4 bg-white border-zinc-950 py-2 text-3xl md:text-7xl rotate-45 translate-x-[20%] translate-y-[50%] font-custom'>
+      <div className='absolute top-0 left-0 right-0 border-y-4 bg-white border-zinc-300 py-2 text-3xl md:text-7xl rotate-45 translate-x-[20%] translate-y-[50%] font-custom'>
         <Marquee speed={170}>
           $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA&nbsp;
         </Marquee>
@@ -135,7 +135,7 @@ function App() {
         </div>
         
         <div className='md:absolute md:bottom-10 md:left-10 flex justify-center'>
-          <div className='flex flex-col sm:flex-row justify-center bg-slate-100 rounded-xl md:rounded-full z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-slate-400'>
+          <div className='flex flex-col sm:flex-row justify-center bg-slate-100 rounded-xl md:rounded-xl z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-slate-400'>
             <button
               onClick={handleCopy}
               className="text-sm bg-zinc-700 text-white py-2 px-4 rounded-full md:hover:bg-zinc-800 border-2 border-white transition-colors duration-300 z-10 whitespace-nowrap"
