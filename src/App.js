@@ -25,6 +25,7 @@ let notifications = [
   {
     name: "Ansem",
     description: "Na I don't have a kid",
+    
     time: "7m ago",
     icon: "ansem.jpg",
     color: "#00C9A7",
@@ -81,7 +82,7 @@ function App() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('updating...');
+    navigator.clipboard.writeText('DrYGVZxGZaFdBFcQx48QuypWMUBGi6cUY7zWqqbBpump');
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
@@ -143,7 +144,7 @@ function App() {
               {copied ? 'Copied!' : 'Copy'}
             </button>
             <div className='text-xs sm:text-sm md:text-base overflow-x-auto whitespace-nowrap'>
-              updating...
+            DrYGVZxGZaFdBFcQx48QuypWMUBGi6cUY7zWqqbBpump
             </div>
           </div>
         </div>
