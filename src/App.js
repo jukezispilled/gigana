@@ -10,35 +10,28 @@ import Marquee from "react-fast-marquee";
 let notifications = [
   {
     name: "Iggy Azalea",
-    description: "the cat is cute",
+    description: "YOU FUCKIN BITCH!!",
     time: "15m ago",
     icon: "iggy.png",
     color: "#00C9A7",
   },
   {
-    name: "Sahil",
-    description: "you launched without me?",
-    time: "12m ago",
-    icon: "sahil.png",
-    color: "#00C9A7",
-  },
-  {
     name: "yelo",
-    description: "when can I call it",
+    description: "Yea so just call me sometime📞📞",
     time: "10m ago",
     icon: "yelo.jpg",
     color: "#00C9A7",
   },
   {
     name: "Ansem",
-    description: "let me run the socials dawg",
+    description: "Na I don't have a kid",
     time: "7m ago",
     icon: "ansem.jpg",
     color: "#00C9A7",
   },
   {
     name: "Jason Derulo",
-    description: "bought some",
+    description: "Dinner at 7??",
     time: "5m ago",
     icon: "JasonDerulo.jpg",
     color: "#00C9A7",
@@ -88,7 +81,7 @@ function App() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('B53nkGQmsQH9EC4Qgx1LtwE17FAs8p3EPmSrK7VMpump');
+    navigator.clipboard.writeText('updating...');
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
@@ -97,19 +90,8 @@ function App() {
 
   return (
     <div
-      className="h-screen w-screen flex justify-center items-center bg-zinc-950 overflow-clip relative"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
-        backgroundSize: 'contain',
-      }}
+      className="h-screen w-screen flex justify-center items-center bg-zinc-600 overflow-clip relative"
     >
-      <div className='absolute top-0 left-0 right-0 border-y-4 bg-white border-orange-300 py-2 text-3xl md:text-7xl rotate-45 translate-x-[20%] translate-y-[50%] font-custom'>
-        <Marquee speed={170}>
-          $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi&nbsp;
-        </Marquee>
-      </div>
       
       <div className='absolute top-5 left-5 right-5 z-20'>
         <AnimatedList>
@@ -118,42 +100,51 @@ function App() {
           ))}
         </AnimatedList>
       </div>
+
+      <div className='absolute top-0 left-0 right-0 border-y-4 bg-white border-zinc-950 py-2 text-3xl md:text-7xl rotate-45 translate-x-[20%] translate-y-[50%] font-custom'>
+        <Marquee speed={170}>
+          $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA $GIGANA&nbsp;
+        </Marquee>
+      </div>
+
+      <div className='absolute top-[10%] text-center font-custom text-7xl text-zinc-300 z-10'>
+        GIGANA
+      </div>
       
       <div className="absolute bottom-10 right-10 flex flex-col items-center z-10">
         <div className="flex flex-row">
-          <a href="https://x.com/maxitoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://x.com/" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={Xlogo} alt="Xlogo" className="w-14 h-14 rounded-md" />
           </a>
-          <a href="https://t.me/maxitoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://t.me/" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={TG} alt="Tg logo" className="w-14 h-14" />
           </a>
         </div>
       </div>
-
-      <div className="absolute inset-0 flex flex-col justify-center items-center">
-        <div
-          className="flex justify-center items-center h-full"
-        >
-          <motion.img
-            whileHover={{ scale: 1.1, rotate: 10 }}
-            transition={{ type: 'spring', stiffness: 300 }}
-            src="/maxi.png"
-            alt="Tunes"
-            className="-mt-[7.5%] w-[50%] md:w-[30%] h-auto border rounded-md"
-          />
-        </div>
-      </div>
-      
-      <div className='absolute bottom-10 left-10 flex justify-center'>
-        <div className='flex flex-col sm:flex-row justify-center bg-slate-100 rounded-xl md:rounded-full z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-slate-400'>
-          <button
-            onClick={handleCopy}
-            className="text-sm bg-orange-400 text-white py-2 px-4 rounded-full md:hover:bg-orange-500 border-2 border-white transition-colors duration-300 z-10 whitespace-nowrap"
+      <div className='grid gap-4'>
+        <div className="flex flex-col justify-center items-center">
+          <div
+            className="flex justify-center items-center h-full"
           >
-            {copied ? 'Copied!' : 'Copy'}
-          </button>
-          <div className='text-xs sm:text-sm md:text-base overflow-x-auto whitespace-nowrap'>
-          B53nkGQmsQH9EC4Qgx1LtwE17FAs8p3EPmSrK7VMpump
+            <img
+              src="/giga.png"
+              alt="Tunes"
+              className="-mt-[7.5%] w-[55%] md:w-[35%] h-auto border rounded-md"
+            />
+          </div>
+        </div>
+        
+        <div className='md:absolute md:bottom-10 md:left-10 flex justify-center'>
+          <div className='flex flex-col sm:flex-row justify-center bg-slate-100 rounded-xl md:rounded-full z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-slate-400'>
+            <button
+              onClick={handleCopy}
+              className="text-sm bg-zinc-700 text-white py-2 px-4 rounded-full md:hover:bg-zinc-800 border-2 border-white transition-colors duration-300 z-10 whitespace-nowrap"
+            >
+              {copied ? 'Copied!' : 'Copy'}
+            </button>
+            <div className='text-xs sm:text-sm md:text-base overflow-x-auto whitespace-nowrap'>
+              updating...
+            </div>
           </div>
         </div>
       </div>
